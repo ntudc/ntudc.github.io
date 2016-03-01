@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+	<head>
+		<meta charset="UTF-8" /> 
+		<title>NTUTDC</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="NTUPDC.css" />
+		<script type="text/javascript">
+			function homeHover(n) {
+				if (n) {
+					document.getElementById('logoHover').style.opacity = "0.3";
+					document.getElementById('enterHover').style.opacity = "0.3";
+				}
+				else {
+					document.getElementById('logoHover').style.opacity = "1";
+					document.getElementById('enterHover').style.opacity = "1";
+				}
+			}
+
+		</script>
+	</head>
+	<body>
+		
+		<div class="openAnimate"></div>
+		
+
+		<img style="position: absolute; height: 651px; width:100%;" src="RED.png">
+		<video class="video" width="100%" autoplay muted loop poster="backupPic.png">
+		  <source src="video.mp4" type="video/mp4">
+		  <source src="video.ogg" type="video/ogg">
+		  <img style="position: fixed; width:100%; bottom:0" src="backupPic.png">
+		</video>
+
+		<div class="home">
+			<a href="announce/index.html" style="cursor: pointer;"><img id="logoHover" class="logo" src="LOGO_HOME.png" onmouseover="homeHover(true)" onmouseout="homeHover(false)"></a>
+			<div class="btnBar">
+				<a id="enterHover" href="announce/index.html"><div class="btn enter" onmouseover="homeHover(true)" onmouseout="homeHover(false)"><img src="ENTER.png"></div></a>
+			<!--
+				<li><div class="btn"><img class="btnImg" src="info.png"></div>
+					<ul>
+						<li class="noUse"  id="announce"></li>
+						<li class="noUse"  id="final"></li>
+						<a href="info/index.html" style="cursor: pointer;"><li id="merchandise"></li></a>
+					</ul>
+				</li>
+				<a href="signUp/index.html" style="cursor: pointer;"><div class="btn"><img class="btnImg" src="signUp.png"></div></a>
+				<a href="history/index.html" style="cursor: pointer;"><div class="btn"><img class="btnImg" src="history.png"></div></a>
+				<div class="btn" style="padding-left:15px; padding-right:15px;"><img class="btnImg" src="cooperate.png"></div>
+			-->
+			</div>
+		</div>
+
+		<div class="about">
+			<div class="lineBox"></div>
+			<div class="word">
+				<p>
+					<img src="aboutTopic.png"><br><br>
+				</p>
+				<p>
+					於1995年開始舉辦<br>
+					是台灣最具指標性的排舞賽事<br>
+					獲得街舞圈一致肯定<br>
+					擁有最具有公信力的評判<br>
+					提供一個能展現舞技及創意的舞台<br>
+					孕育出無數不同風格的團體及街舞界新星<br>
+					如果你 想被看見<br>
+					就一定得站上這個舞台<br>
+					分享你對街舞的熱愛
+				</p>
+
+			</div>
+			<div class="aboutBtnBar">
+				<a href="about/found/index.html" style="cursor: pointer"><div class="btn">關於台大盃</div></a>
+				<a href="about/team/ours/index.html"><div class="btn">工作團隊</div></a>
+				<a href="about/judge/index.html"><div class="btn">評審介紹</div></a>
+			</div>
+			<img class="black" src="black.png">
+		</div>
+		<!--
+		<div class="footer">
+		</div>
+		-->
+	</body>
+</html>

@@ -1,0 +1,658 @@
+body {
+	background: black;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+.openAnimate {
+	position: fixed;
+	background: black;
+	width: 100%;
+	height: 100%;
+	animation-name: fadeOut;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	z-index: 2;
+}
+
+.home {
+	background-size: cover;
+	height: 650px;
+}
+
+.logo {
+	position: absolute;
+	left: 50%;
+	top: -15px;
+	margin-left: -285px;
+	width: 580px;
+}
+
+.btnBar {
+	position: absolute;
+	height: 84px;
+	top: 510px;
+	left: 50%;
+	text-align: center;
+	margin-left: -82px;
+	z-index: 2;
+}
+
+.enter img {
+	width: 80px;
+}
+
+.enter {
+	padding: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.btnBar li {
+	list-style: none;
+	float: left;
+}
+
+.btnBar li ul {
+	padding: 0;
+	margin-top: -1px;
+	z-index: 3;
+}
+
+.btnBar li ul li {
+	float: none;
+	font-size: 16px;
+	display: none;
+	width: 100%;
+	height: 50px;
+	line-height: 49px;
+	background: rgba(0, 0, 0, 0.9);
+	color: rgba(255, 255, 255, 1);
+}
+
+.btnBar li:hover ul li {
+	display: block;
+}
+
+.btnBar li ul a:hover li {
+	background-color: rgba(153, 47, 48, 1);
+	color: white;
+}
+
+
+
+.btnBar li ul a {
+	text-decoration: none;
+}
+
+
+
+
+.btnBar .btn {
+	top: 0;
+	border-radius: 0px;
+	font-size: 14px;
+	cursor: pointer;
+	z-index: 0;
+	width: auto;
+	margin-left: 10px;
+	margin-right: 10px; 
+}
+
+.btnBar a:hover {
+	opacity: 0.3;
+}
+
+
+.btnImg {
+	height: 85px;
+	z-index: -1;
+}
+
+.about {
+	width: 100%;
+	height: 650px;
+	overflow: hidden;
+}
+
+.about .black {
+	height: 650px;
+}
+
+.about .word {
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	margin-top: 100px;
+	margin-left: -162px;
+	font-size: 18px;
+	z-index: 1;
+	color: white;
+
+}
+
+.about .word h1 {
+	margin-bottom: 40px;
+}
+
+.aboutBtnBar {
+	position: absolute;
+	left: 50%;
+	margin-left: -333px;
+	margin-top: 450px;
+	z-index: 1;
+}
+
+.aboutBtnBar .btn {
+	width: 180px;
+	height: 60px;
+	border: rgba(255, 255, 255, 0.7) 1px solid;
+	border-radius: 0px;
+	font-size: 20px;
+	line-height: 44px;
+	display: inline-block;
+	margin: 20px;
+	color: white;
+}
+
+.aboutBtnBar .btn a {
+	color: white;
+	text-decoration: none;
+}
+
+.aboutBtnBar .btn:hover {
+	background-color: rgba(255, 80, 80, 0.6);
+	border: rgba(0, 0, 0, 0) 1px solid;
+}
+
+.black {
+	position: absolute;
+	width: 100%;
+}
+
+.video {
+	position: fixed;
+	width: 100%;
+	z-index: -1;
+	bottom: 0; 
+}
+
+.pic {
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+
+.footer {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 3;
+}
+
+.lineBox {
+	position: absolute;
+	width: 80%;
+	left: 10%;
+	margin-top: 50px;
+	height: 550px;
+	border: white 1px solid;
+	z-index: 1;
+}
+
+
+/* other */
+
+.topBar .btnBar .btn:hover {
+	background-color: rgba(153, 47, 48, 1);
+}
+
+.smallWord {
+	color: rgba(255, 255, 255, 0.3);
+	font-weight: normal;
+}
+
+/* info */
+.topBarLine {
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	border-bottom: rgba(255, 255, 255, 0.7) 1px solid;
+	z-index: 1;
+	margin-left: 20%;
+}
+
+.topBar {
+	position: fixed;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 1);
+	height: 69px;
+	z-index: 2;
+}
+
+.topBar .logo {
+	background-image: url('Logo.png');
+	background-size: cover;
+	width: 130px;
+	height: 130px;
+	left: 70px;
+	top: 10px;
+	margin-left: 0;
+	z-index: 1;
+	opacity: 0.9;
+}
+
+.topBar .logo:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.topBar .btnBar .btn {
+	color: rgba(135, 42, 35, 0.8);
+	color: rgba(255, 255, 255, 0.9);
+	width: 130px;
+	margin: 0;
+	padding: 15px;
+	height: 70px;
+	line-height: 36px;
+	padding-top: 16px;
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+.topBar .btnBar {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	margin-left: 20%; /* 363 */
+	padding-top: 0px;
+	z-index: 1;
+}
+
+.topBar .btnBar a:hover {
+	opacity: 1;
+}
+
+.division {
+	width: 100%;
+	height: 430px;
+	color: white;
+	overflow: hidden;
+}
+
+.division .black {
+	position: absolute;
+	height: 430px;
+}
+
+.division .wordDiv{
+	font-size: 20px;
+	background-image: url('black.png');
+	background-size: cover;
+	width: 100%;
+	height: 450px;
+}
+
+/* merchandise */
+#word1, #word2 {
+	position: absolute;
+	z-index: 1;
+	color: white;
+	font-size: 18px;
+	margin-left: 100px;
+	margin-top: 90px;
+	text-align: center;
+}
+
+#word2 {
+	margin-left: 650px;
+	margin-top: 60px;
+}
+
+
+
+/*sign up*/
+.signUp {
+	position: relative;
+	width: 100%;
+}
+.signUp .wordDiv {
+	padding-top: 120px;
+	color: white;
+	font-size: 20px;
+	width: 100%;
+}
+
+.signUp .wordDiv .word {
+	color: white;
+	font-size: 18px;
+	margin-left: 10%;
+	z-index: 1;
+	width: 80%;
+	padding: 50px;
+}
+
+.signUp .wordDiv .word li {
+	list-style: upper-roman;
+}
+
+.signUp .wordDiv .word h1 {
+	font-size: 24px;
+	font-weight: bolder;
+}
+
+
+/* history */
+
+.judges {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	height: 380px;
+	color: white;
+	font-size: 22px;
+	font-weight: lighter;
+}
+
+.judges h1 {
+	margin-top: 120px;
+	font-weight: lighter;
+}
+.finalHistory {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.9);
+	height: 230px;
+	margin-top: -21px;
+	color: white;
+	font-size: 22px;
+	font-weight: lighter;
+}
+
+.finalHistory h1 {
+	font-weight: lighter;
+	padding-top: 72px;
+}
+
+.finalWord {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%; 
+	padding-top: 17px;
+	height: 70px;
+	margin-top: -70px;
+	text-align: center;
+	color: white;
+	font-weight: lighter;
+	font-size: 24px;
+	z-index: 1;
+}
+
+
+/* found */
+.found .wordDiv .word li {
+	list-style: square;
+}
+
+.found .wordDiv .word li li {
+	list-style: circle;
+}
+
+/* ours */
+.ours {
+	position: absolute;
+	width: 80%;
+	left: 10%;
+}
+
+.ours, .ours .black {
+	height: 500px;
+}
+
+.ours .wordDiv {
+	padding: 0;
+}
+
+.ours .wordDiv .word {
+	margin-top: 0;
+}
+
+.ours .wordDiv .word li {
+	list-style: none;
+}
+
+.ours .aboutBtnBar {
+	position: relative;
+	margin-top: 0;
+	padding-top: 100px;
+	margin-left: -280px;
+}
+
+.ours .aboutBtnBar .btn {
+	margin: 50px;
+}
+
+.backgroundDancer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+/* announce */
+
+.announce {
+	position: absolute;
+	left: 5%;
+	margin-top: 150px;
+}
+
+.thumb {
+	padding: 0;
+	width: 29%;
+	height: 330px;
+	background-color: rgba(255, 255, 255, 0.1);
+	margin: 2%;
+	overflow: hidden;
+}
+
+.thumb img {
+	width: 100%;
+}
+
+.thumb:hover {
+	opacity: 0.4;
+}
+
+.thumb h1 {
+	font-size: 18px;
+	font-weight: bolder;
+	text-align: center;
+	margin: 13px;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.thumb p {
+	margin: 20px;
+	margin-top: 0px;
+	color: rgba(255, 255, 255, 0.8);
+	font-weight: bold;
+}
+
+.signUp .wordDiv .word .announce li {
+	list-style: none;
+	height: 50px;
+	line-height: 50px;
+}
+
+.signUp .wordDiv .word .announce li:hover {
+	background: rgba(153, 47, 48, 1);
+}
+
+.signUp .wordDiv .word .topBoard {
+	list-style: none;
+	margin-bottom: 5px;
+}
+
+.signUp .wordDiv .word .topBoard .zero, .signUp .wordDiv .word .topBoard .one, .signUp .wordDiv .word .topBoard .two, .signUp .wordDiv .word .topBoard .three {
+	border: 0px;
+}
+
+/* carousel */
+
+/*廣告輪播的寬度大小*/
+.container {
+	padding: 0;
+}
+
+.coverflow{
+	width: 100%;
+}
+
+.carousel, .carousel .item {
+	height: 100vh;
+}
+
+
+.mwt-title-btn{
+	bottom: 10px;
+}
+
+/*標籤按鈕樣式與大小*/
+.mwt-title-btn li{
+	font-size: 17px;
+	font-weight: bold;
+	width: 17%;
+	height: 65px;
+	float: left;
+	padding: 7px;
+	background: rgba(255,255,255,0.6);
+	border-radius: 0;
+	border: 0;
+	text-indent: 0;
+}
+
+/*正在輪播樣式*/
+.mwt-title-btn li.active{
+	width: 17%;
+	height: 65px;
+	border-bottom:solid 5px rgba(153, 47, 48, 1);
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+	margin-top: 1px;
+}
+
+
+
+/* animation */
+
+::selection{
+	background-color: rgba(0, 0, 0, 0);
+	color: rgba(255, 95, 90, 0.8);
+}
+
+.aboutDiv {
+	position: absolute;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.aboutDiv img {
+	width: 100%;
+}
+
+.aboutDiv .word {
+	text-align: center;
+}
+
+.aboutDiv a {
+	font-size: 16px;
+	line-height: 36px;
+}
+
+.aboutDiv .finalWord {
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 37px;
+}
+
+.judge img {
+	margin-top: 140px;
+	width: 70%;
+	margin-left: 15%;
+}
+
+.others img {
+	margin-top: 130px;
+}
+
+
+
+#discri1, #discri2, #discri3 {
+	display: none;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+    margin-left: 0;
+  }
+
+  100% {
+  	opacity: 0;
+  	margin-left: -100%;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+    margin-left: 0;
+  }
+
+  100% {
+  	opacity: 0;
+  	margin-left: -100%;
+  }
+
+}
+
+
+@media (max-width: 1070px) {
+	.video {
+		display: none;
+	}
+ }
+
+@media (max-width: 1024px) {
+	.video {
+		display: block;
+	}
+}
+
+@media (max-width: 1023px) {
+	body {
+		width: 1280px;
+	}
+}
+
+@media (max-width: 975px) {
+	.thumb {
+		width: 60%;
+		height: 400px;
+		margin-left: 30%;
+	}
+}
+
