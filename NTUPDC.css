@@ -402,6 +402,10 @@ h1 {
 	list-style: circle;
 }
 
+.found .wordDiv .word h1 {
+	font-size: 28px;
+}
+
 /* ours */
 .ours {
 	position: absolute;
@@ -434,6 +438,10 @@ h1 {
 
 .ours .aboutBtnBar .btn {
 	margin: 50px;
+}
+
+.ours .aboutDiv {
+	padding-bottom: 100px;
 }
 
 .backgroundDancer {
@@ -552,7 +560,7 @@ h1 {
 
 ::selection{
 	background-color: rgba(0, 0, 0, 0);
-	color: rgba(255, 95, 90, 0.8);
+	color: rgba(255, 75, 70, 0.8);
 }
 
 .aboutDiv {
