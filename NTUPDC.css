@@ -702,7 +702,7 @@ h1 {
 	}
 }
 
-@media (max-width: 746px) {
+@media (max-width: 500px) {
 	body {
 		width: 1280px;
 	}
@@ -711,10 +711,6 @@ h1 {
 @media (min-height: 800px) {
 	.video, .black {
 		display: none;
-	}
-
-	.ours {
-		margin-left: 15%;
 	}
 
 	.judge {
@@ -738,11 +734,23 @@ h1 {
 	.homeVideo {
 		display: none;
 	}
+
+	body, .signUp {
+		height: 100vh;
+	}
+
+	.ours .aboutBtnBar {
+		width: 80%;
+
+	}
 }
 
 @media (max-width: 690px) {
 	.topBar, .topBarLine {
 		display: none;
+	}
+	.judges h1 {
+		margin-top: 50px;
 	}
 }
 
