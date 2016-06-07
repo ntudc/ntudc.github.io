@@ -6,6 +6,10 @@ h1 {
 	margin-top: 0;
 }
 
+.btn {
+	cursor: pointer;
+}
+
 .openAnimate {
 	position: fixed;
 	background: black;
@@ -20,6 +24,10 @@ h1 {
 .home {
 	background-size: cover;
 	height: 650px;
+}
+
+.homevideo {
+	display: relative;
 }
 
 .logo {
@@ -599,6 +607,14 @@ h1 {
 
 .others img {
 	margin-top: 130px;
+}
+
+.smallImg img {
+	width: 70%;
+}
+
+#btn1, #btn2, #btn3 {
+	cursor: pointer;
 }
 
 
